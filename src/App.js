@@ -107,9 +107,9 @@ function App() {
           </button>
         </div>
 
-        <h2 className="heading"> Upcoming </h2>
+        <h2 className="heading"> Upcoming Tasks</h2>
         <div className="task-list" id="task-list">
-          
+
         </div>
       </main>
     </div>
