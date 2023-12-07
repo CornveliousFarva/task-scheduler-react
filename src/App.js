@@ -1,5 +1,8 @@
 import React, { useState } from "react"; 
-import "./App.css"; // Import your CSS file here 
+import "./App.css"; // Import your CSS file here
+// import Container from 'react-bootstrap/Container';
+// import Row from 'react-bootstrap/Row';
+// import Col from 'react-bootstrap/Col'; 
 
 function App() { 
 	const [tasks, setTasks] = useState([]); 
@@ -155,3 +158,8 @@ function App() {
 } 
 
 export default App; 
+
+// Future plans with this app:
+// 1. Color code task priorities
+// 2. CSS polishing up
+// 3. Make completed tasks disappear
