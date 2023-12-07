@@ -141,6 +141,25 @@ function App() {
           </table>
 
   {/* Completed Tasks */}
+    <div className="completed-task-list">
+      <h2 className="cheading"> Completed Tasks</h2>
+      <table>
+        <thead>
+          <th> Task Name </th>
+          <th> Priority </th>
+          <th> Deadline </th>
+        </thead>
+        <tbody>
+          {completedTasks.map((ct) => (
+            <tr key={ct.id}>
+              <td> {ct.task} </td>
+              <td> {ct.priority} </td>
+              <td> {ct.deadline} </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
         </div>
       </main>
     </div>
