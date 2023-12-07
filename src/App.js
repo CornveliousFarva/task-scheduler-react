@@ -5,7 +5,7 @@ function App() {
   // Classes
   const [tasks, setTasks] = useState([]);
   const [completedTasks, setCompletedTasks] = useState([]);
-  const [tasks, setTask] = useState("");
+  const [task, setTask] = useState("");
   const [priority, setPriority] = useState("top");
   const [deadline, setDeadline] = useState("");
 
@@ -74,7 +74,7 @@ function App() {
       <header>
         <h1> Task Scheduler </h1>
       </header>
-
+{/* Task Form */}
       <main>
         <div className="task-form">
           <input
@@ -106,10 +106,41 @@ function App() {
             Add Task
           </button>
         </div>
-
+        
+{/* Upcoming Tasks */}
         <h2 className="heading"> Upcoming Tasks</h2>
         <div className="task-list" id="task-list">
+          <table>
+            <thead>
+              <tr>
+                <th> Task Name </th>
+                <th> Priority </th>
+                <th> Deadline </th>
+                <th> Action </th>
+              </tr>
+            </thead>
 
+            <tbody>
+              {upcomingTasks.map((t) => (
+                <tr key={t.id}>
+                  <td> {t.task} </td>
+                  <td> {t.priority} </td>
+                  <td> {t.deadline} </td>
+                  <td>
+                    {!t.done && (
+                      <button className="mark-done"
+                              onClick={() => markDone(t.id)}
+                      >
+                        Mark Done
+                      </button>
+                    )}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+
+  {/* Completed Tasks */}
         </div>
       </main>
     </div>
