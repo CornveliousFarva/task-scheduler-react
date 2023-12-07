@@ -1,5 +1,5 @@
 import React, { useState } from "react"; 
-import "./App.css"; // Import your CSS file here
+import "./App.css"; 
 // import Container from 'react-bootstrap/Container';
 // import Row from 'react-bootstrap/Row';
 // import Col from 'react-bootstrap/Col'; 
