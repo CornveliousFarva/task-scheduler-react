@@ -88,5 +88,30 @@ table th{
   border-radius: 10px;
 }
 
+.completed-task-list{
+  margin-top: 20px;
+}
 
+.completed-task{
+  padding: 10px;
+  border: 1px solid crimson;
+  border-radius: 5px;
+  background-color: #eaffea;
+}
+
+.completed-task h2{
+  color: #28a745;
+}
+
+h2{
+  font-size: 1.3rem;
+}
+
+.heading{
+  padding-bottom: 10px;
+}
+
+.cheading{
+  color: rgb(54, 54, 54);
+}
 
