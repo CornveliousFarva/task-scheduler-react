@@ -45,5 +45,26 @@ main{
   border-radius: 10px;
 }
 
+button{
+  background-color: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
 
+.mark-done{
+  padding: 10px;
+  font-size: 16px;
+  flex: 1;
+  border-radius: 15px;
+  background-color: crimson;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.task-list{
+  border: 1px solid #ddd;
+  padding: 10px;
+}
 
