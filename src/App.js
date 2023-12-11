@@ -1,6 +1,6 @@
 import React, { useState } from "react"; 
 import "./App.css"; 
-// import Container from 'react-bootstrap/Container';
+import Container from 'react-bootstrap/Container';
 // import Row from 'react-bootstrap/Row';
 // import Col from 'react-bootstrap/Col'; 
 
@@ -67,7 +67,7 @@ function App() {
 	const upcomingTasks = tasks.filter((t) => !t.done); 
 
 	return ( 
-		<div className="App"> 
+		<Container className="App"> 
 			<header> 
 				<h1>Task Scheduler</h1> 
 			</header> 
@@ -76,7 +76,7 @@ function App() {
 					<input 
 						type="text"
 						id="task"
-						placeholder="Enter task..."
+						placeholder="Please Enter Task"
 						value={task} 
 						onChange={handleTaskChange} 
 					/> 
@@ -153,7 +153,7 @@ function App() {
 					</table> 
 				</div> 
 			</main> 
-		</div> 
+		</Container> 
 	); 
 } 
 
